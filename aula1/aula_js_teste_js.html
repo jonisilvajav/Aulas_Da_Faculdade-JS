@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao JS</title>
+    <link rel="stylesheet" href="aula_js.css">
+</head>
+<body>
+    <div>
+        <div class="menu"><h2>Clique em um destes números (1 a 7) para poder testar o JS </h2> </div>
+
+        <div class="subMenu">
+            <ul>
+                <li><nav><a href="#data" onclick="scrollToSection('titulo1')">Número 1</a></nav></li>
+                <li><nav><a href="#user" onclick="scrollToSection('titulo2')">Número 2</a></nav></li>
+                <li><nav><a href="#edit" onclick="scrollToSection('titulo3')">Número 3</a></nav></li>
+                <li><nav><a href="#js" onclick="scrollToSection('titulo4')">Número 4</a></nav></li>
+                <li><nav><a href="#alerta" onclick="scrollToSection('titulo5')">Número 5</a></nav></li>
+                <li><nav><a href="#elementos" onclick="scrollToSection('titulo6')">Número 6</a></nav></li>
+                <li><nav><a href="#delete" onclick="scrollToSection('titulo7')">Número 7</a></nav></li>
+           </ul>
+        </div>
+
+        <hr>
+        <div class="separa"></div>
+       
+        <div class="centro" id="data">
+            <h2 id="Título1">1- Data e Hora</h2>
+            <p>Passe o mouse sobre o botão para ver a data e hora do Sistema</p>
+            <button onmouseover ="document.getElementById('dh').innerHTML = Date()"onmouseout="document.getElementById('dh').innerHTML= ''">Veja a hora AQUI</button>
+            <p id="dh"></p>
+        </div>
+
+        <div class="centro" id="user">
+            <h2 id="Título2">2- Outras formas de usar innerHTML</h2>
+            <p id="par1">O conteúdo deste paragrafo será copiado para um p abaixo do botão</p>
+            <button onclick="copiaParagrafo()">Clique AQUI para copiar o paragrafo</button>
+            <p id="par2"></p>
+        </div>
+
+        <div class="centro" id="edit">
+            <h2 id="Título3">3- Editando a fonte de uma imagem</h2>
+            <button onclick="ligar()">Ligue a luz</button>
+            <img id="luz" src="https://www.w3schools.com/js/pic_bulboff.gif" 
+            alt="Imagem de uma lampada"><button onclick="desligar()">Apague a luz</button>
+        </div>
+
+        <div class="centro" id="js">
+            <h2 id="Título4">4- Editando estilo com JS</h2>
+            <p id="pEstilo">O estilo desse paragrafo sera alterado com o clique abaixo</p>
+            <button onclick="alteraEstilo()">Altere o estilo do paragrafo</button>
+        </div>
+
+        <div class="centro" id="alerta">
+            <h2 id="Título5">5- Exibindo janela de alerta</h2>
+            <p>Ao clicar com o botão veja uma mensagem:</p>
+            <button onclick="exibirJanela()">Clique para exibir uma janela</button>
+        </div>
+
+        <div class="centro" id="elementos">
+            <h2 id="Título6">6- Ocultar elementos com JS</h2>
+            <label for="texto">Entrada de texto</label>
+            <input id="texto" type="text">
+            <button onclick="ocultar()">Ocultar caixa de texto</button>
+        </div>
+
+        <div class="centro" id="delete">
+            <h2 id="Título7">7- Reescreva o HTML, CSS e o JS</h2>
+            <p> Função document.white() reescreva a pagina</p>
+            <button onclick="recarregar()">Apagar</button> <p>Para voltar é só recarregar a página que tudo voltará ao normal</p>
+        </div>
+        <hr>
+       <p class="testar">Página para testar javascript em aula</p>
+    </div>
+
+    <script>
+        function copiaParagrafo(){
+            var x = document.getElementById('par1').innerHTML;
+            document.getElementById('par2').innerHTML = x;
+        }
+
+        function ligar(){
+            document.getElementById('luz').src ="https://www.w3schools.com/js/pic_bulbon.gif";
+        }
+
+
+        function desligar(){
+            document.getElementById('luz').src="https://www.w3schools.com/js/pic_bulboff.gif";
+        }
+
+        function alteraEstilo(){
+            document.getElementById('pEstilo').style.fontSize ='3rem';
+        }
+
+        function ocultar(){
+            let estado = document.getElementById('texto').style.display;
+            if (estado == 'none'){
+            document.getElementById ('texto').style.display = 'inline';
+        }else{
+            document.getElementById ('texto').style.display = 'none';
+        }
+        }
+
+        function recarregar(){
+            document.write();
+        }
+
+        const links = document.querySelectorAll('a[href^="#"]');
+          links.forEach(link => {
+          link.addEventListener('click', event => {
+          event.preventDefault(); // Previne o comportamento padrão do link
+          const id = link.getAttribute('href').substring(1);
+          const titulo = document.getElementById(id).querySelector('h2');
+          titulo.classList.add('destaque');
+          setTimeout(() => {
+          titulo.classList.remove('destaque');
+          }, 3000); // Remove a classe de destaque após 3 segundos
+      
+          const destino = document.getElementById(id);
+          const distancia = destino.offsetTop;
+          const duracao = 500; // Tempo da animação em milissegundos
+          const inicio = window.pageYOffset;
+          const distanciaPercorrida = distancia - inicio;
+          let tempoInicial = null;
+
+          function animarRolagem(tempoAtual) {
+            if (tempoInicial === null) tempoInicial = tempoAtual;
+            const tempoDecorrido = tempoAtual - tempoInicial;
+            const percentualDeDeslocamento = tempoDecorrido / duracao;
+            const deslocamento = distanciaPercorrida * percentualDeDeslocamento;
+            window.scroll(0, inicio + deslocamento);
+           if (tempoDecorrido < duracao) requestAnimationFrame(animarRolagem);
+           }
+
+          requestAnimationFrame(animarRolagem);
+          });
+        });
+
+    </script>
+</body>
+</html>
