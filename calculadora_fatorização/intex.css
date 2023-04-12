@@ -1,0 +1,47 @@
+/* Seletor de elementos */
+body{
+    background-color: rgb(250, 241, 228);
+    width: 60%;
+    padding: 20%;
+    text-align: center;
+    margin-top: -180px;
+
+}
+
+h1{
+    color: brown;
+}
+
+.quadro{
+    background-color: aliceblue;
+    padding: 5%;
+    padding-left: 70px;
+    padding-right:70px ;
+    border-radius: 50px;
+    box-shadow: 1px 1px 7px rgb(83, 83, 102);
+
+}
+
+#numero{
+    font-size: 25px;
+    display: block;
+    margin: 2%;
+    width: 95%;
+    border-style: none;
+    border-bottom: ridge;
+    box-shadow: inset 10px 10px 30px rgb(166, 166, 170);
+   }
+
+button{
+    width: 30%;
+    align-content: center;
+    border: none;
+    background-color: cadetblue;
+    color: aliceblue;
+    font-size: large;
+    margin-top: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 5px;
+
+}
