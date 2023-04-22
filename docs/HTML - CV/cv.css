@@ -1,0 +1,126 @@
+.corpo{
+background-image: url("pexels-allan-carvalho-14364504.jpg");
+background-position: auto;
+}
+
+.container{
+position: relative;
+top: 50px;
+bottom: 50px;
+height: 110vh;
+background-color: rgb(114, 153, 153);
+width: 720px;
+}
+
+.curriculo{
+height: 100vh;
+    
+}
+
+.sobre_mim_1{
+height: 123vh;
+background-color: aliceblue;
+padding: 31px;
+margin-bottom: 50px;
+}
+
+.sobre_mim_1 h3 {
+font-size: 26px; 
+margin-bottom: 20px;
+color: rgb(5, 5, 177);
+font-weight: bold;
+}
+
+.sobre_mim_1 h4 {
+font-size: 18px; 
+margin-bottom: 8px;
+font-weight: bold;
+}
+
+.sobre_mim_1 h2 {
+font-size: 18px; 
+margin-bottom: 18px;
+font-weight: bold;
+}
+
+.sobre_mim_1 h5 {
+font-size: 14px; 
+margin-bottom: 9px;
+}
+
+.sobre_mim_1 h6 {
+font-size: 14px;
+ margin-bottom: 18px; 
+}
+
+.sobre_mim_1 ul li {
+font-size: 12px; 
+margin-bottom: 5px;
+padding-left: 2px;
+list-style-position: inside;
+}
+
+.sobre_mim_1 p {
+font-size: 12px; 
+margin-bottom: 15px;
+}
+
+.contatos{
+height: 123vh;
+background-color:rgb(8, 8, 65);
+color: aliceblue;
+margin-bottom: 50px;
+}
+
+.gostoso{
+margin-top: 12px;
+}
+
+.contatos h2 {
+font-size: 15px; 
+margin-bottom: 20px;
+    
+}
+
+.contatos h2 {
+font-size: 18px; 
+margin-top: 25px;
+line-height: 5px;
+color: rgb(216, 215, 215);
+text-align: center;
+}
+
+.contatos h3 {
+font-size: 13px; 
+margin-bottom: 17px;
+text-align: center;
+}
+
+.contatos h4 {
+font-size: 13px; 
+margin-bottom: 30px;
+text-align: center;
+}
+
+.contatos p {
+font-size: 13px; 
+margin-bottom: 12px; 
+text-align: center;
+}
+
+.contatos h1 {
+font-size: 13px; 
+margin-bottom: 31px;
+text-align: center;
+}
+
+.icone {
+filter: invert(100%);
+}
+
+.midia{
+margin-top: 10%;
+margin-right: 5px;
+margin-left: 15px;
+}
+

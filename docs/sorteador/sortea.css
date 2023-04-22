@@ -1,0 +1,53 @@
+.corpo{
+  background-image: url("jeremy-bishop-G9i_plbfDgk-unsplash.jpg");
+}
+
+.container p {
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+    bottom: 91px;
+    line-height: 30px;
+  }
+  
+  .container img,
+  .container input {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -10px;
+  }
+
+
+.sorteia {
+  background-image: linear-gradient( to top, #667cbd, #73AEF0);
+  box-shadow: 1px 2px 5px black;
+  height: 465px;
+  margin-top: 80px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  }
+
+  .botao{
+  background-color: rgb(207, 135, 0);
+  color: black;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  }
+  
+  .botao:hover {
+    background-color: #cc8502;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .botao:active {
+    transform: translateY(2px);
+  }
+  
+  
+  

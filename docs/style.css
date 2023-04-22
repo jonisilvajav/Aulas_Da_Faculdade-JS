@@ -1,0 +1,44 @@
+body{
+    background-image: url("brian-patrick-tagalog-_8hGFBxWD0A-unsplash.jpg");
+}
+
+.quadrado {
+    background-color: beige;
+    padding-left: 50px;
+    padding-right: 50px;
+	width: 195px;
+	height: 100px;
+	border: 1px solid black;
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	border-radius: 10px;
+    float: right;
+    box-shadow: 2px 2px 18px rgb(255, 255, 255);
+    
+}
+
+.quadrado a {
+	text-decoration: none;
+	color: black;
+}
+
+.home{
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+    top: 50px;
+    padding-top: 150px;
+    margin-top: 50px;
+   
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 15px 10px;
+    border-color: transparent transparent #000000 transparent;
+  }

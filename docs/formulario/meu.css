@@ -1,0 +1,87 @@
+
+body{
+   background-color: rgb(186, 215, 233);
+   height: 10px;
+   padding: 80px;
+   padding-top: 20px;
+   text-align:center;
+
+}
+
+.formulario{
+    background-color: rgb(92, 106, 230);
+    padding: auto;
+    padding: 10px;
+    text-align: center;
+    border: solid rgb(27, 83, 139);
+    color:rgb(255, 255, 255) ;
+    
+}
+
+div{
+    text-align: center;
+    background-color:  rgb(196, 231, 255);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.D{
+    width: 50px;
+    display: inline-block;
+}
+
+.D1{
+    width: 35px;
+    display: inline-block;
+}
+
+h4{
+    background-color: rgb(98, 160, 221);
+    padding: 4px;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    border: solid rgb(11, 3, 134);
+}
+
+.sub2{
+   margin-top: 50px;
+   background-color:rgb(196, 231, 255);
+   border-radius: 7px;
+   margin-left: 300px;
+   margin-right: 300px;
+   border: solid rgb(98, 160, 221);
+   color: rgb(3, 3, 145);
+   padding: 35px;
+   
+}
+
+.sub{
+   background-color: rgb(196, 231, 255);
+   border-radius: 5px;
+   margin-top: 10px;
+   margin-left: 300px;
+   margin-right: 300px;
+   border: solid rgb(98, 160, 221);
+   color: rgb(2, 2, 110);
+   padding: 1px;
+}
+
+.alt{
+   background-color:bisque ;
+   margin-left: 335px;
+   margin-right: 335px;
+}
+
+.salv{
+   margin-bottom: 20px;
+}
+
+.class{
+   margin-bottom: 30px;
+}
+
+.texto{
+   text-align: center;
+   background-color:rgb(196, 231, 255);
+}

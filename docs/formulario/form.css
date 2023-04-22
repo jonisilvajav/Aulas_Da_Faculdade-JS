@@ -1,0 +1,90 @@
+body{
+  background-image: url("mona-eendra-vC8wj_Kphak-unsplash.jpg");
+}
+
+.container{
+  width: 100vh;
+  height: 240vh;
+  background-image: linear-gradient( to top, #66b3bd, #73AEF0, #afcff3, #bde5ff, #ffffff);
+  border: 1px solid black;
+    
+}
+
+.titulo{
+  border: 5px solid black;
+  border-top-width: 5px; /* Define a largura da borda superior */
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-left: -13px;
+  margin-right: -13px;
+}
+
+label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 1px;
+  }
+  
+  input[type="text"] {
+  padding: 2px;
+  border: 1px solid #000000;
+  font-size: 16px;
+  width: 32%;
+    
+  }
+  
+  
+.botão {
+  background-color: #4CAF50; 
+  border: none; 
+  color: white; 
+  padding: 12px 24px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 4px 2px; 
+  cursor: pointer; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo para quando o botão é pressionado */
+  .botão:active {
+    background-color: #3e8e41;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+  }
+
+  .nome {
+    color: blue;
+  }
+  
+  .email {
+    color: green;
+  }
+  
+  .telefone {
+    color: red;
+  }
+  
+  .evento {
+    color: purple;
+  }
+  
+  .tipo-ingresso {
+    color: rgb(145, 97, 8);
+  }
+  
+  .horario {
+    color: teal;
+  }
+  
+  .acompanhantes {
+    color: maroon;
+  }
+  
+  .observacoes {
+    color: navy;
+  }
