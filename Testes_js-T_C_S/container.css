@@ -1,0 +1,66 @@
+.corpo{
+    background-image: linear-gradient( to right,#84acda, #c9d8e9, #f8d3d3) ;
+}
+
+.firt{
+    background-image: linear-gradient( to top, #667cbd, #73AEF0);
+    box-shadow: 1px 2px 5px black;
+    color: aliceblue;
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    margin-top: 40px;
+    inline-size: 300px;
+    line-height:40px;
+    margin-bottom: 20px; /* Espaço inferior de 20 pixels */
+    padding: 20px;
+    border-radius:10px ; 
+    padding-block-end: 30px;
+    padding-top: 1%;
+
+}
+
+.second{
+    background-image: linear-gradient( to top, #667cbd, #73AEF0);
+    box-shadow: 1px 2px 5px black;
+    color: aliceblue;
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    inline-size: 300px;
+    line-height:40px;
+    padding: 20px;
+    border-radius:10px ; 
+    padding-block-end: 25px;
+    padding-top: 1%;
+}
+
+.third{
+    background-image: linear-gradient( to top, #667cbd, #73AEF0);
+    box-shadow: 1px 2px 5px black;
+    color: aliceblue;
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    inline-size: 300px;
+    line-height:40px;
+    border-radius:10px ; 
+    padding-block-end: 25px;
+    padding-top: 1%;
+}
+
+button{
+background-color: rgb(253, 248, 228);
+border: none;
+border-radius:2px; 
+margin-top: 10px;
+line-height:20px;
+margin-block-end: 20px;
+}
+
+.sorte{
+margin-top: 20px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="aula5.js"></script>
+    <link rel="stylesheet" href="container.css">
+    
+    <title>Tabuada</title>
+</head>
+<body class=" corpo container">
+
+    <div class="">
+
+       <div class="firt container">
+          <h1>Tabuada</h1>
+          <label for="numero">Digite qual tabuada deseja ver</label>
+          <input id="numero" type="number" required>
+          <button onclick="imprimeTabuada()">Enviar</button>
+          <div id="result"></div>
+        </div>
+
+       <div class="second container">
+          <h2>Contador de Cliques</h2>
+          <p>Este botão recebeu <span id="cliques">0</span> cliques</p>
+          <button onclick="contador()">Clique AQUI</button>
+       </div>
+
+       <div class="third container">
+          <h2>Sorteador de números aleatórios</h2>
+          <button onclick="sortear()">Clique para sortear</button>
+          <label class="sorte" for="numeroSorteadoInput"> <br> Número sorteado:</label>
+          <input type="number" id="numeroSorteadoInput">
+          
+      </div>
+        
+    </div>
+</body>
+</html>
